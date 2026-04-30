@@ -65,14 +65,31 @@
       background: #4da3ff;
       color: black;
     }
+    
+    .banner {
+  background: url('banner.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 20px 40px;
+  border-radius: 12px;
+}
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Shaliz شاليز</h1>
-  <p>Musical Artist</p>
+<header class="banner">
+  <div class="overlay">
+    <h1>Shaliz شاليز</h1>
+    <p class="subtitle">Musical Artist</p>
+  </div>
 </header>
 
 <main>
